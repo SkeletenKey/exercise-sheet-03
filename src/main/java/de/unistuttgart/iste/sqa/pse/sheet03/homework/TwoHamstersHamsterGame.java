@@ -10,10 +10,37 @@ public class TwoHamstersHamsterGame extends InternalTwoHamstersHamsterGame {
 
 	@Override
 	void hamsterRun() {
-		// delete the following lines, once you figured out what the helpers do.
-		controllerTiffany.pickAllGrains();
+		// TODO implement Exercise 2 (b) here
+		controllerPaule.pickGrainsAndMove();
+		controllerPaule.pickAllGrains();
+		controllerPaule.turnRightTimes(1);
+		controllerPaule.moveTimes(1);
+		controllerPaule.pickAllGrains();
+		controllerPaule.moveTimes(1);
+		controllerPaule.turnRightTimes(1);
+		controllerPaule.pickGrainsAndMove();
+		controllerPaule.turnLeftTimes(1);
+		controllerPaule.moveTimes(1);
+		controllerPaule.pickAllGrains();
+		controllerPaule.turnLeftTimes(1);
+		controllerPaule.moveTimes(3);
 		controllerPaule.putAllGrains();
 
-		// TODO implement Exercise 2 (b) here
+		controllerTiffany.moveTimes(1);
+		controllerTiffany.pickAllGrains();
+		controllerTiffany.turnLeftTimes(1);
+		controllerTiffany.moveTimes(2);
+		controllerTiffany.pickAllGrains();
+		controllerTiffany.turnRightTimes(1);
+		controllerTiffany.moveTimes(2);
+		controllerTiffany.pickAllGrains();
+		controllerTiffany.turnRightTimes(1);
+		controllerTiffany.moveTimes(3);
+		controllerTiffany.putAllGrains();
+
+		controllerPaule.moveTimes(1);
+		controllerTiffany.moveTimes(1);
+		controllerPaule.turnLeftTimes(10);
+		controllerTiffany.turnLeftTimes(10);
 	}
 }
